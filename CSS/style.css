@@ -106,7 +106,7 @@ a:hover {
 }
 
 .socials a img:hover {
-  transform: rotate(360deg) scale(1.2);
+  transform: translateY(-10px); /* Move the image up */
 }
 .donate {
   font-family: 'Montserrat', sans-serif;
