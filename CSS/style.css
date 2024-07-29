@@ -1,0 +1,187 @@
+body {
+  margin: 0px;
+  background-color: var(--background-color);
+  font-size: large;
+  font-weight: bold;
+}
+
+:root {
+    --background-color: black;
+    --font-color: white;
+}
+
+.dark-theme{
+  --background-color: white;
+  --font-color: black; 
+}
+
+.shadow_1 {
+  animation-name: bio_entry_animation_right;
+  animation-duration: 3.35s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+.shadow_2 {
+  animation-name: bio_entry_animation_left;
+  animation-duration: 3.35s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+#toogle-button{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  animation-name: toggle;
+  animation-duration: 3.60s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards
+}
+
+#bio{
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: underline;
+  color: white; font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5; 
+  margin: 0;
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+}
+
+#logo-image{
+  margin-top: 17px;
+}
+
+@keyframes toggle {
+  from{
+
+    right:0%;
+  }
+  to{
+
+    right: 20%;
+  }
+}
+
+@keyframes bio_entry_animation_left {
+  from {
+    position: relative;
+    right: 100%;
+
+  }
+
+  to {
+    position: relative;
+    right: 0%;
+
+  }
+}
+
+@keyframes bio_entry_animation_right {
+  from {
+    position: relative;
+    left: 100%;
+
+  }
+
+  to {
+    position: relative;
+    left: 0%;
+
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  align-items: center;
+  text-align: center;
+  color: var(--font-color);
+  padding: 5px;
+  display: block;
+  text-decoration: underline dotted;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.info {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--font-color);
+  text-align: center;
+  padding: 30px 30px 10px 30px;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.logo {
+  align-self: center;
+  box-shadow: 3px 2px 7px white;
+}
+
+.logo img {
+  transition: all .2s ease 0s;
+  margin-bottom: -4px;
+}
+
+.logo img:hover {
+  width: 210px;
+}
+
+.socials {
+  align-self: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.socials a img {
+  width: 32px;
+  margin: 12px 9px 5px 9px;
+  transition: all .45s ease-in-out 0s;
+}
+
+.socials a img:hover {
+  transform: translateY(-10px); 
+}
+.donate {
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 0px 15px 0px;
+  padding: 0px;
+}
+
+.donate div {
+  margin: 15px 0px 10px 0px;
+}
+
+footer {
+  font-size: .8rem;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 0px 30px 0px;
+}
+
+
+.secondary-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.white {
+  color: var(--font-color);
+}
